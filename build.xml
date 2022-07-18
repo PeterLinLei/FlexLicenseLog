@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<project name="FlexLicenseLog" default="clean" basedir=".">
+	<property name="src" value="./src"></property>
+	<property name="classes" value="./classes"></property>
+	<property name="lib" value="./lib"></property>
+	<property name="release" value="./"></property>
+	<path id="classpath">
+		<fileset dir="${lib}">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+
+	<target name="clean">
+		<delete includeemptydirs="true">
+			<fileset dir="${classes}">
+				<include name="**/*" />
+			</fileset>
+			<fileset dir="${release}">
+				<include name="FlexLicenseLog.jar" />
+			</fileset>
+		</delete>
+	</target>
+
+	<target name="init">
+		<mkdir dir="${classes}" />
+	</target>
+
+	<target name="java.compile" depends="init"
+		description="Compile java source code">
+		<javac classpathref="classpath" srcdir="${src}"
+			destdir="${classes}">
+		</javac>
+		<copy todir="${classes}">
+			<fileset dir="${src}">
+				<include name="**/*.properties" />
+				<include name="**/*.gif" />
+				<include name="**/*.JPG" />
+				<include name="**/*.jpg" />
+				<include name="**/*.png" />
+				<include name="**/*.xml" />
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="java.jar" depends="java.compile"
+		description="Create JAR archieves">
+		<jar destfile="${release}/FlexLicenseLog.jar">
+			<manifest>
+				<attribute name="Main-Class"
+					value="portal.FlexLicenseLog" />
+			</manifest>
+			<fileset dir="${classes}">
+				<include name="**/*" />
+			</fileset>
+			<zipfileset src="./lib/mysql-connector-java-5.1.6-bin.jar" />
+		</jar>
+	</target>
+</project>
+

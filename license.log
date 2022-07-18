@@ -1,0 +1,57 @@
+16:03:21 (lmgrd) -----------------------------------------------
+16:03:21 (lmgrd)   Please Note:
+16:03:21 (lmgrd) 
+16:03:21 (lmgrd)   This log is intended for debug purposes only.
+16:03:21 (lmgrd)   In order to capture accurate license
+16:03:21 (lmgrd)   usage data into an organized repository,
+16:03:21 (lmgrd)   please enable report logging. Use Macrovision's
+16:03:21 (lmgrd)   software license administration  solution,
+16:03:21 (lmgrd)   FLEXnet Manager, to  readily gain visibility
+16:03:21 (lmgrd)   into license usage data and to create
+16:03:21 (lmgrd)   insightful reports on critical information like
+16:03:21 (lmgrd)   license availability and usage. FLEXnet Manager
+16:03:21 (lmgrd)   can be fully automated to run these reports on
+16:03:21 (lmgrd)   schedule and can be used to track license
+16:03:21 (lmgrd)   servers and usage across a heterogeneous
+16:03:21 (lmgrd)   network of servers including Windows NT, Linux
+16:03:21 (lmgrd)   and UNIX. Contact Macrovision at
+16:03:21 (lmgrd)   www.macrovision.com for more details on how to
+16:03:21 (lmgrd)   obtain an evaluation copy of FLEXnet Manager
+16:03:21 (lmgrd)   for your enterprise.
+16:03:21 (lmgrd) 
+16:03:21 (lmgrd) -----------------------------------------------
+16:03:21 (lmgrd) 
+16:03:21 (lmgrd) 
+16:03:21 (lmgrd) The license server manager (lmgrd) running as root:
+16:03:21 (lmgrd) 	This is a potential security problem
+16:03:21 (lmgrd) 	and is not recommended.
+16:03:21 (lmgrd) FLEXnet Licensing (v10.8.5.0 build 31891 amd64_s8) started on perahpc.org (linux) (2/9/2009)
+16:03:21 (lmgrd) Copyright (c) 1988-2006 Macrovision Europe Ltd. and/or Macrovision Corporation. All Rights Reserved.
+16:03:21 (lmgrd) US Patents 5,390,297 and 5,671,412.
+16:03:21 (lmgrd) World Wide Web:  http://www.macrovision.com
+16:03:21 (lmgrd) License file(s): /ansys_inc/shared_files/licensing/license.dat
+16:03:21 (lmgrd) lmgrd tcp-port 1055
+16:03:21 (lmgrd) Starting vendor daemons ... 
+16:03:21 (lmgrd) Started ansyslmd (internet tcp_port 40089 pid 11757)
+16:03:21 (ansyslmd) FLEXnet Licensing version v10.8.5.0 build 31891 amd64_s8
+16:03:21 (ansyslmd) Server started on perahpc.org for:	ansys		
+16:03:21 (ansyslmd) struct		prf		prfnls		
+16:03:21 (ansyslmd) caewbpl3	rdacis		dsstruct	
+16:03:21 (ansyslmd) emag		agppi		acfd		
+16:03:21 (ansyslmd) acfd_par_proc	acfd_client	mechhpc		
+16:03:21 (ansyslmd) dyna		dysmp		ekm_desktop	
+16:03:21 (ansyslmd) EXTERNAL FILTERS are OFF
+16:03:21 (lmgrd) ansyslmd using TCP-port 40089
+16:11:53 (ansyslmd) TCP_NODELAY NOT enabled
+16:12:56 (ansyslmd) OUT: "acfd" linlei@perahpc.org  
+16:12:56 (ansyslmd) OUT: "acfd_par_proc" linlei@perahpc.org  (4 licenses) 
+16:13:23 (ansyslmd) IN: "acfd" linlei@perahpc.org  
+16:13:23 (ansyslmd) IN: "acfd_par_proc" linlei@perahpc.org  (4 licenses) 
+
+17:25:35 (lmgrd) lmgrd will now shut down all the vendor daemons
+
+17:25:35 (lmgrd) Shutting down ansyslmd pid=11757 because of signal 15
+17:25:35 (lmgrd) Can't connect to the license server system. Shutdown ansyslmd failed. 
+17:25:35 (lmgrd) 	No socket connection to license server manager. (-7,10015)
+17:25:35 (ansyslmd) daemon shutdown requested - shutting down
+17:25:38 (lmgrd) EXITING DUE TO SIGNAL 15

@@ -1,0 +1,6 @@
+dbDriver        com.mysql.jdbc.Driver
+dbUrl           jdbc:mysql://head:3306/portal
+dbUser          root
+dbUrl_arco      jdbc:mysql://head:3306/arco
+dbUrl_portal    jdbc:mysql://head:3306/portal
+
