@@ -55,3 +55,4 @@
 17:25:35 (lmgrd) 	No socket connection to license server manager. (-7,10015)
 17:25:35 (ansyslmd) daemon shutdown requested - shutting down
 17:25:38 (lmgrd) EXITING DUE TO SIGNAL 15
+
