@@ -1,5 +1,5 @@
-// 2009-06-04
-// HWStatistic, LicenseStatistic, PeraLS, ThreeDES, Portal.
+// 
+// HWStatistic, LicenseStatistic, GridLS, ThreeDES, Portal.
 package portal;
 import java.security.*;
 import javax.crypto.*;

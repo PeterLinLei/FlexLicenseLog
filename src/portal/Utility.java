@@ -1,5 +1,5 @@
-// 2009-07-22
-// PeraLS, LicenseStatistic, Initialization, Portal.
+// 
+// GridLS, LicenseStatistic, Initialization, Portal.
 package portal; 
 import java.io.*;
 import java.sql.*;
