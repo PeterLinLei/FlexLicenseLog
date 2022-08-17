@@ -118,7 +118,7 @@ public class ThreeDES {
         System.out.println(new String(srcBytes));
 */
 /*
-		String dbPassword = new String("pera2008");
+		String dbPassword = new String("grid2008");
 		System.out.println(dbPassword);
 		System.out.println(dbPassword.getBytes());
 		byte[] encoded = td.encryptMode(td.keyBytes, dbPassword.getBytes());
@@ -128,7 +128,7 @@ public class ThreeDES {
 		System.out.println(new String(srcBytes));
 		System.out.println(srcBytes);
 */
-        String dbPassword = new String("pera2008");
+        String dbPassword = new String("grid2008");
         td.encryptKeyToFile(dbPassword.getBytes(),"D:/HPCClient/WorkSpace/Portal/WebContent/password");
 		System.out.println(ThreeDES.decryptKeyFromFile("D:/HPCClient/WorkSpace/Portal/WebContent/password"));
 	}
